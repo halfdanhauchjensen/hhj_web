@@ -63,12 +63,10 @@ function particlesDraw(){
 
 function collage(){
 
-  //var totalWidth = 1000;
   var segmentWidth = ildDaabCover.width/100;
-  var segmentHeight = ildDaabCover.height;
 
   for (var i = 0; i < 10; i++){
-    image(ildDaabCover.get(ildDaabCover.width/10*i,0,ildDaabCover.width/10, ildDaabCover.height), segmentWidth*i, 0, segmentWidth, 750);
+    image(ildDaabCover.get(ildDaabCover.width/10*i,0,ildDaabCover.width/10, ildDaabCover.height), segmentWidth*i,0,segmentWidth,750);
   }
 
 
