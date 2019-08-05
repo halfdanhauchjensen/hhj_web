@@ -48,7 +48,7 @@ function draw() {
 function windowResized() {
   resizeCanvas(windowWidth, windowWidth/2*nrOfContentAreas);
   contentAreaHeight = windowWidth/2;
-  background(255);
+  //background(255);
 }
 
 function particlesDraw(){
