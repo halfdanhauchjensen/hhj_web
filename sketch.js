@@ -31,7 +31,7 @@ function setup() {
 
 function draw() {
   //particlesDraw();
-  
+  collage();
   // put drawing code here
   for (var i = 0; i < nrOfContentAreas; i++){
   	//rect(width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
@@ -58,4 +58,9 @@ function particlesDraw(){
     particles[i].show();
     //particles[i].show(lightPathCover);
   }
+}
+
+function collage(){
+  image(lightPathCover.get(0,0,100,lightPathCover.height));
+
 }
