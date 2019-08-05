@@ -31,14 +31,14 @@ function setup() {
 
 function draw() {
   //particlesDraw();
-  collage();
+  //collage();
   //image(lightPathCover.get(0,0,100,100), 0,0,100,100);
   // put drawing code here
   for (var i = 0; i < nrOfContentAreas; i++){
   	//rect(width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
     
-    //if (i==0) image(lightPathCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
-    //if (i==1) image(socialMegaphoneCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
+    if (i==0) image(lightPathCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
+    if (i==1) image(socialMegaphoneCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
     if (i==2) image(ildDaabCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
     if (i==3) image(classicalConcertCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
     if (i==4) image(shadowPlayCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
@@ -66,6 +66,7 @@ function collage(){
   var segmentWidth = ildDaabCover.width/10;
 
   for (var i = 0; i < 10; i++){
+    // Go on from here...
     image(ildDaabCover.get(ildDaabCover.width/10*i,0,ildDaabCover.width/10, ildDaabCover.height), segmentWidth*i,0,segmentWidth,750);
   }
 
