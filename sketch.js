@@ -73,6 +73,6 @@ function collage(){
   var mappedW = (width/10 + (width-width/5)) / 100;
   var mappedH = (contentAreaHeight-width/10) / 100;
 
-  image(lightPathCover.get(x,y,w,h), mappedX,mappedY,mappedW,mappedH);
+  image(ildDaabCover.get(x,y,w,h), mappedX,mappedY,mappedW,mappedH);
 
 }
