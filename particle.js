@@ -14,13 +14,16 @@ function Particle(x, y) {
     this.y = constrain(this.y, 0, height);    
   }
   
-  this.show = function(img) {
+  //this.show = function(img) {
+    this.show = function() {
     noStroke();
     var px = floor(this.x);
     var py = floor(this.y);
+
     var col = img.get(px, py);
     //console.log(col);
-    fill(col[0], col[1], col[2], 200);
+    //fill(col[0], col[1], col[2], 200);
+    fill(255);
     ellipse(this.x, this.y, this.r, this.r);    
   }
   

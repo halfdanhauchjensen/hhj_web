@@ -55,7 +55,7 @@ function particlesDraw(){
 
   for(var i = 0; i < particles.length; i++) {
     particles[i].update();
-    particles[i].show(img);
+    particles[i].show();
     //particles[i].show(lightPathCover);
   }
 }
