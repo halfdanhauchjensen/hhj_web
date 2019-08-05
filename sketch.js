@@ -64,20 +64,25 @@ function particlesDraw(){
 function collage(){
 
   
-  var w = 1500/20;
-  var h = 750/20;
+  for (var i = 0; i < 10; i++){
+    image(ildDaabCover.get(ildDaabCover.width/10*i,0,ildDaabCover.width/10, ildDaabCover.height), 50*i,0,50,750);
+  }
+
+
+  var w = 1500/10;
+  var h = 750/10;
   var x = random(0, 1500-w);
   var y = random(0, 750-h);
 
 
   
-  var mappedW = (width/10 + (width-width/5)) / 20;
-  var mappedH = (contentAreaHeight-width/10) / 20;
+  var mappedW = (width/10 + (width-width/5)) / 10;
+  var mappedH = (contentAreaHeight-width/10) / 10;
 
-  var mappedX = map(x, 0, 1500-w, width/10, (width/10 + (width-width/5)) - mappedW);
-  var mappedY = map(y, 0, 750-h, (width/20+(0*contentAreaHeight)), ((width/20+(0*contentAreaHeight)) +  (contentAreaHeight-width/10)) - mappedH );
+  var mappedX = map(x, 0, 1500-w, width/10, (width/10 + (width-width/5) - mappedW));
+  var mappedY = map(y, 0, 750-h, (width/20+(0*contentAreaHeight)), ((width/20+(0*contentAreaHeight)) +  (contentAreaHeight-width/10) - mappedH ));
 
 
-  image(ildDaabCover.get(x,y,w,h), mappedX,mappedY,mappedW,mappedH);
+  //image(ildDaabCover.get(x,y,w,h), mappedX,mappedY,mappedW,mappedH);
 
 }
