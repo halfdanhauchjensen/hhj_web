@@ -12,7 +12,7 @@ function setup() {
 function draw() {
   // put drawing code here
   for (var i = 0; i < nrOfContentAreas; i++){
-  	fill(50+50*i);
+  	fill(50+50*i, 100, 100);
   	rect(0,i*contentAreaHeight, width, contentAreaHeight);
   }
 }
