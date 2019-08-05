@@ -11,7 +11,7 @@ function preload() {
   lightPathCover = loadImage('pics/light_path/cover.jpg');
   shadowPlayCover = loadImage('pics/shadow_play/cover.jpg');
   socialMegaphoneCover = loadImage('pics/social_megaphone/cover.jpg');
-  ClassicalConcertCover = loadImage('pics/classical_concert/cover.jpg');
+  classicalConcertCover = loadImage('pics/classical_concert/cover.jpg');
 }
 
 function setup() {
