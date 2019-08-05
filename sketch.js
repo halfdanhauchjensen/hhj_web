@@ -5,7 +5,7 @@ var contentAreaHeight;
 let lightPathCover;
 
 function preload() {
-  img = loadImage('pics/light_path/cover.jpg');
+  lightPathCover = loadImage('pics/light_path/cover.jpg');
 }
 
 function setup() {
