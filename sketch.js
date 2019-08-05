@@ -4,10 +4,12 @@ var nrOfContentAreas = 4;
 var contentAreaHeight;
 let lightPathCover;
 let shadowPlayCover;
+let socialMegaphoneCover;
 
 function preload() {
   lightPathCover = loadImage('pics/light_path/cover.jpg');
   shadowPlayCover = loadImage('pics/shadow_play/cover.jpg');
+  socialMegaphoneCover = loadImage('pics/social_megaphone/cover.jpg');
 }
 
 function setup() {
@@ -23,6 +25,7 @@ function draw() {
   	rect(width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
     if (i==0) image(lightPathCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
     if (i==1) image(shadowPlayCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
+    if (i==2) image(socialMegaphoneCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
   }
 }
 
