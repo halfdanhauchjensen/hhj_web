@@ -3,9 +3,11 @@ var sketchHeight = 2000;
 var nrOfContentAreas = 4;
 var contentAreaHeight;
 let lightPathCover;
+let shadowPlayCover;
 
 function preload() {
   lightPathCover = loadImage('pics/light_path/cover.jpg');
+  shadowPlayCover = loadImage('pics/shadow_play/cover.jpg');
 }
 
 function setup() {
@@ -20,6 +22,7 @@ function draw() {
   for (var i = 0; i < nrOfContentAreas; i++){
   	rect(width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
     if (i==0) image(lightPathCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
+    if (i==1) image(shadowPlayCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
   }
 }
 
