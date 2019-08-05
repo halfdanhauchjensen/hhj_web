@@ -7,13 +7,13 @@ function setup() {
   // put setup code here
   createCanvas(windowWidth, windowWidth/2*nrOfContentAreas);
   contentAreaHeight = windowWidth/2;
+  noFill();
 }
 
 function draw() {
   // put drawing code here
   for (var i = 0; i < nrOfContentAreas; i++){
-  	fill(50+50*i, 100, 100);
-  	rect(0,i*contentAreaHeight, width, contentAreaHeight);
+  	rect(100,50+(i*contentAreaHeight), width-200, contentAreaHeight-100);
   }
 }
 
