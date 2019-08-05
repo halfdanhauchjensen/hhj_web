@@ -4,7 +4,7 @@
 function Particle(x, y) {
   this.x = x;
   this.y = y;
-  this.r = random(4, 7);
+  this.r = random(1, 3);
   
   this.update = function() {
     this.x += random(-10, 10);
