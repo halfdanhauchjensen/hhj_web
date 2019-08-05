@@ -30,7 +30,7 @@ function setup() {
 }
 
 function draw() {
-  particlesDraw();
+  //particlesDraw();
   
   // put drawing code here
   for (var i = 0; i < nrOfContentAreas; i++){
