@@ -20,7 +20,7 @@ function Particle(x, y) {
     var px = floor(this.x);
     var py = floor(this.y);
 
-    var col = img.get(px, py);
+    //var col = img.get(px, py);
     //console.log(col);
     //fill(col[0], col[1], col[2], 200);
     fill(255); //
