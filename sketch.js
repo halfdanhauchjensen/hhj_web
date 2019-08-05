@@ -63,10 +63,12 @@ function particlesDraw(){
 
 function collage(){
 
-  var x = random(0, 1500-10);
-  var y = random(0, 750-10);
+  
   var w = 1500/20;
   var h = 750/20;
+  var x = random(0, 1500-w);
+  var y = random(0, 750-h);
+
 
   var mappedX = map(x, 0, 1500, width/10, (width/10 + (width-width/5)));
   var mappedY = map(y, 0, 750, (width/20+(0*contentAreaHeight)), (width/20+(0*contentAreaHeight)) +  (contentAreaHeight-width/10) );
