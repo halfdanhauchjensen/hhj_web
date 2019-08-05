@@ -16,11 +16,11 @@ function Particle(x, y) {
   
   this.show = function(img) {
     noStroke();
-    var px = floor(this.x / vScale);
-    var py = floor(this.y / vScale);
+    var px = floor(this.x);
+    var py = floor(this.y);
     var col = img.get(px, py);
     //console.log(col);
-    fill(col[0], col[1], col[2], slider.value());
+    fill(col[0], col[1], col[2], 200);
     ellipse(this.x, this.y, this.r, this.r);    
   }
   
