@@ -37,8 +37,8 @@ function draw() {
   for (var i = 0; i < nrOfContentAreas; i++){
   	//rect(width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
     
-    if (i==0) image(lightPathCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
-    if (i==1) image(socialMegaphoneCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
+    //if (i==0) image(lightPathCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
+    //if (i==1) image(socialMegaphoneCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
     if (i==2) image(ildDaabCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
     if (i==3) image(classicalConcertCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
     if (i==4) image(shadowPlayCover, width/10,width/20+(i*contentAreaHeight), width-width/5, contentAreaHeight-width/10);
@@ -62,6 +62,17 @@ function particlesDraw(){
 }
 
 function collage(){
-  image(lightPathCover.get(0,0,100,100), 0,0,100,100);
+
+  var x = random(0, 1500-10);
+  var y = random(0, 750-10);
+  var w = 1500/100;
+  var h = 750/100;
+
+  var mappedX = map(x, 0, 1500, width/10, (width/10 + (width-width/5)));
+  var mappedY = map(y, 0, 750, (width/20+(i*contentAreaHeight)), (width/20+(i*contentAreaHeight)) +  (contentAreaHeight-width/10) );
+  var mappedW = (width/10 + (width-width/5)) / 100;
+  var mappedH = (contentAreaHeight-width/10) / 100;
+
+  image(lightPathCover.get(x,y,w,h), mappedX,mappedY,mappedW,mappedH);
 
 }
