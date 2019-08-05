@@ -23,7 +23,7 @@ function Particle(x, y) {
     var col = img.get(px, py);
     //console.log(col);
     //fill(col[0], col[1], col[2], 200);
-    fill(255);
+    fill(255); //
     ellipse(this.x, this.y, this.r, this.r);    
   }
   
