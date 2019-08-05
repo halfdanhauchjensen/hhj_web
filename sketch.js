@@ -69,7 +69,7 @@ function collage(){
   var h = 750/100;
 
   var mappedX = map(x, 0, 1500, width/10, (width/10 + (width-width/5)));
-  var mappedY = map(y, 0, 750, (width/20+(i*contentAreaHeight)), (width/20+(i*contentAreaHeight)) +  (contentAreaHeight-width/10) );
+  var mappedY = map(y, 0, 750, (width/20+(0*contentAreaHeight)), (width/20+(0*contentAreaHeight)) +  (contentAreaHeight-width/10) );
   var mappedW = (width/10 + (width-width/5)) / 100;
   var mappedH = (contentAreaHeight-width/10) / 100;
 
